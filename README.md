@@ -13,6 +13,9 @@ flask run
 ![изображение](https://user-images.githubusercontent.com/61711711/117548791-8d996280-b03f-11eb-9ffb-8dac829ff8cc.png)
 
 
+![изображение](https://user-images.githubusercontent.com/61711711/118264945-2d804180-b4c1-11eb-8008-2fcd39f302a6.png)
+
+
 ![изображение](https://user-images.githubusercontent.com/61711711/117548763-693d8600-b03f-11eb-966c-c5ca808f6a48.png)
 
 
