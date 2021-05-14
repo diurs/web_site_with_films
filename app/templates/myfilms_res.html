@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
+<body>
+{% block content %}
+    {% if current_user.is_anonymous %}
+    <h4><a href="{{ url_for('login') }}">Login</a></h4>
+
+    {% else %}
+    <h4>
+    	<p> Hi, {{ current_user.username }}! 
+    	<a href="{{ url_for('logout') }}">Logout</a> </p>
+    </h4>
+    {% endif %}
+
+</body>
+
+<body>
+	<h3>
+	<p class="letter">	<a href="/search">Поиск</a>
+		<a href="/top250">TOP 250 фильмов</a>
+		Мои фильмы
+		<a href="/actors">Актеры</a> </p>
+	</h3>
+</body>
+
+<h3>Добавить фильм</h3>
+
+<form method="post" >
+	{{ form.csrf_token() }}
+	{{ form.film }}
+	{{ form.submit }}
+</form>
+
+<h3>Просмотренные фильмы пользователя {{ user.username }} </h3>
+
+<body>
+
+
+    {% for spisok in r %}
+    <div>
+    	<tr>
+    		
+          
+            <p>{{ spisok.films }}    нет в бд</p>
+            
+    	</tr>
+    </div>
+    {% endfor %}
+{% endblock %}
+
+</body>
+
+</html>

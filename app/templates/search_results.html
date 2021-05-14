@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
+<body>
+  <h3> hi, {{user.user}} </h3>
+</body>
+<body>
+	<h3>
+	<p class="letter">Поиск 
+		<a href="/top250">TOP 250 фильмов</a>
+		<a href="/myfilms">Мои фильмы</a>
+		<a href="/actors">Актеры</a> </p>
+	</h3>
+</body>
+    
+<body>
+
+<h3 style=" color: #45a29e">Найденные фильмы : </h3>
+
+
+<ol>
+
+
+{%for i in output_in_html%}
+
+    <li style=" color: #C5C6C7">{{i}}</li>
+
+{%endfor%}
+
+  
+
+</ol> 
+</body>
+</html>

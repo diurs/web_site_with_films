@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
+{% set pics =['/static/imgs/0.jpg', '/static/imgs/1.jpg', '/static/imgs/2.jpg', '/static/imgs/3.jpg', '/static/imgs/4.jpg', '/static/imgs/5.jpg', '/static/imgs/6.jpg', '/static/imgs/7.jpg', '/static/imgs/8.jpg', '/static/imgs/9.jpg', '/static/imgs/10.jpg', '/static/imgs/11.jpg', '/static/imgs/12.jpg', '/static/imgs/13.jpg', '/static/imgs/14.jpg', '/static/imgs/15.jpg', '/static/imgs/16.jpg', '/static/imgs/17.jpg', '/static/imgs/18.jpg', '/static/imgs/19.jpg', '/static/imgs/20.jpg', '/static/imgs/21.jpg', '/static/imgs/22.jpg', '/static/imgs/23.jpg', '/static/imgs/24.jpg', '/static/imgs/25.jpg', '/static/imgs/26.jpg', '/static/imgs/27.jpg', '/static/imgs/28.jpg', '/static/imgs/29.jpg', '/static/imgs/30.jpg', '/static/imgs/31.jpg', '/static/imgs/32.jpg', '/static/imgs/33.jpg', '/static/imgs/34.jpg', '/static/imgs/35.jpg', '/static/imgs/36.jpg', '/static/imgs/37.jpg', '/static/imgs/38.jpg', '/static/imgs/39.jpg', '/static/imgs/40.jpg', '/static/imgs/41.jpg', '/static/imgs/42.jpg', '/static/imgs/43.jpg', '/static/imgs/44.jpg', '/static/imgs/45.jpg', '/static/imgs/46.jpg', '/static/imgs/47.jpg', '/static/imgs/48.jpg', '/static/imgs/49.jpg', '/static/imgs/50.jpg', '/static/imgs/51.jpg', '/static/imgs/52.jpg', '/static/imgs/53.jpg', '/static/imgs/54.jpg', '/static/imgs/55.jpg', '/static/imgs/56.jpg', '/static/imgs/57.jpg', '/static/imgs/58.jpg', '/static/imgs/59.jpg', '/static/imgs/60.jpg', '/static/imgs/61.jpg', '/static/imgs/62.jpg', '/static/imgs/63.jpg', '/static/imgs/64.jpg', '/static/imgs/65.jpg', '/static/imgs/66.jpg', '/static/imgs/67.jpg', '/static/imgs/68.jpg', '/static/imgs/69.jpg', '/static/imgs/70.jpg', '/static/imgs/71.jpg', '/static/imgs/72.jpg', '/static/imgs/73.jpg', '/static/imgs/74.jpg', '/static/imgs/75.jpg', '/static/imgs/76.jpg', '/static/imgs/77.jpg', '/static/imgs/78.jpg', '/static/imgs/79.jpg', '/static/imgs/80.jpg', '/static/imgs/81.jpg', '/static/imgs/82.jpg', '/static/imgs/83.jpg', '/static/imgs/84.jpg', '/static/imgs/85.jpg', '/static/imgs/86.jpg', '/static/imgs/87.jpg', '/static/imgs/88.jpg', '/static/imgs/89.jpg', '/static/imgs/90.jpg', '/static/imgs/91.jpg', '/static/imgs/92.jpg', '/static/imgs/93.jpg', '/static/imgs/94.jpg', '/static/imgs/95.jpg', '/static/imgs/96.jpg', '/static/imgs/97.jpg', '/static/imgs/98.jpg', '/static/imgs/99.jpg', '/static/imgs/100.jpg', '/static/imgs/101.jpg', '/static/imgs/102.jpg', '/static/imgs/103.jpg', '/static/imgs/104.jpg', '/static/imgs/105.jpg', '/static/imgs/106.jpg', '/static/imgs/107.jpg', '/static/imgs/108.jpg', '/static/imgs/109.jpg', '/static/imgs/110.jpg', '/static/imgs/111.jpg', '/static/imgs/112.jpg', '/static/imgs/113.jpg', '/static/imgs/114.jpg', '/static/imgs/115.jpg', '/static/imgs/116.jpg', '/static/imgs/117.jpg', '/static/imgs/118.jpg', '/static/imgs/119.jpg', '/static/imgs/120.jpg', '/static/imgs/121.jpg', '/static/imgs/122.jpg', '/static/imgs/123.jpg', '/static/imgs/124.jpg', '/static/imgs/125.jpg', '/static/imgs/126.jpg', '/static/imgs/127.jpg', '/static/imgs/128.jpg', '/static/imgs/129.jpg', '/static/imgs/130.jpg', '/static/imgs/131.jpg', '/static/imgs/132.jpg', '/static/imgs/133.jpg', '/static/imgs/134.jpg', '/static/imgs/135.jpg', '/static/imgs/136.jpg', '/static/imgs/137.jpg', '/static/imgs/138.jpg', '/static/imgs/139.jpg', '/static/imgs/140.jpg', '/static/imgs/141.jpg', '/static/imgs/142.jpg', '/static/imgs/143.jpg', '/static/imgs/144.jpg', '/static/imgs/145.jpg', '/static/imgs/146.jpg', '/static/imgs/147.jpg', '/static/imgs/148.jpg', '/static/imgs/149.jpg', '/static/imgs/150.jpg', '/static/imgs/151.jpg', '/static/imgs/152.jpg', '/static/imgs/153.jpg', '/static/imgs/154.jpg', '/static/imgs/155.jpg', '/static/imgs/156.jpg', '/static/imgs/157.jpg', '/static/imgs/158.jpg', '/static/imgs/159.jpg', '/static/imgs/160.jpg', '/static/imgs/161.jpg', '/static/imgs/162.jpg', '/static/imgs/163.jpg', '/static/imgs/164.jpg', '/static/imgs/165.jpg', '/static/imgs/166.jpg', '/static/imgs/167.jpg', '/static/imgs/168.jpg', '/static/imgs/169.jpg', '/static/imgs/170.jpg', '/static/imgs/171.jpg', '/static/imgs/172.jpg', '/static/imgs/173.jpg', '/static/imgs/174.jpg', '/static/imgs/175.jpg', '/static/imgs/176.jpg', '/static/imgs/177.jpg', '/static/imgs/178.jpg', '/static/imgs/179.jpg', '/static/imgs/180.jpg', '/static/imgs/181.jpg', '/static/imgs/182.jpg', '/static/imgs/183.jpg', '/static/imgs/184.jpg', '/static/imgs/185.jpg', '/static/imgs/186.jpg', '/static/imgs/187.jpg', '/static/imgs/188.jpg', '/static/imgs/189.jpg', '/static/imgs/190.jpg', '/static/imgs/191.jpg', '/static/imgs/192.jpg', '/static/imgs/193.jpg', '/static/imgs/194.jpg', '/static/imgs/195.jpg', '/static/imgs/196.jpg', '/static/imgs/197.jpg', '/static/imgs/198.jpg', '/static/imgs/199.jpg', '/static/imgs/200.jpg', '/static/imgs/201.jpg', '/static/imgs/202.jpg', '/static/imgs/203.jpg', '/static/imgs/204.jpg', '/static/imgs/205.jpg', '/static/imgs/206.jpg', '/static/imgs/207.jpg', '/static/imgs/208.jpg', '/static/imgs/209.jpg', '/static/imgs/210.jpg', '/static/imgs/211.jpg', '/static/imgs/212.jpg', '/static/imgs/213.jpg', '/static/imgs/214.jpg', '/static/imgs/215.jpg', '/static/imgs/216.jpg', '/static/imgs/217.jpg', '/static/imgs/218.jpg', '/static/imgs/219.jpg', '/static/imgs/220.jpg', '/static/imgs/221.jpg', '/static/imgs/222.jpg', '/static/imgs/223.jpg', '/static/imgs/224.jpg', '/static/imgs/225.jpg', '/static/imgs/226.jpg', '/static/imgs/227.jpg', '/static/imgs/228.jpg', '/static/imgs/229.jpg', '/static/imgs/230.jpg', '/static/imgs/231.jpg', '/static/imgs/232.jpg', '/static/imgs/233.jpg', '/static/imgs/234.jpg', '/static/imgs/235.jpg', '/static/imgs/236.jpg', '/static/imgs/237.jpg', '/static/imgs/238.jpg', '/static/imgs/239.jpg', '/static/imgs/240.jpg', '/static/imgs/241.jpg', '/static/imgs/242.jpg', '/static/imgs/243.jpg', '/static/imgs/244.jpg', '/static/imgs/245.jpg', '/static/imgs/246.jpg', '/static/imgs/247.jpg', '/static/imgs/248.jpg', '/static/imgs/249.jpg']
+   %}
+<body>
+  {% block content %}
+    {% if current_user.is_anonymous %}
+    <h4><a href="{{ url_for('login') }}">Login</a></h4>
+
+    {% else %}
+    <h4>
+    	<p> Hi, {{ current_user.username }}! 
+    	<a href="{{ url_for('logout') }}">Logout</a> </p>
+    </h4>
+    {% endif %}
+   {% endblock %}
+</body>
+
+<body>
+	<h3 >
+	<p class="letter">	<a href="/search">Поиск</a>
+		TOP 250 фильмов
+		<a href="/myfilms">Мои фильмы</a>
+		<a href="/actors">Актеры</a> </p>
+	</h3>
+</body>
+
+
+{% for row, pictures in results|zip(pics) %}
+      <tr>
+         <h3 style=" color: #45a29e">{{ row[0]+1 }}) {{ row[1] }}, {{ row[2] }} год </h3>
+         
+           <body>
+            <p>
+            <img src="{{ pictures }}"  height="400px" width="300px"> 
+         </p></body>
+          </body>
+           <p>{{ row[5] }}</p>
+          
+      </tr>
+{% endfor %}
+
+

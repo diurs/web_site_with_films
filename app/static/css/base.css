@@ -1,0 +1,22 @@
+body{
+      background: #1F2833;
+    }
+   .letter {
+    border: 3px solid #66FCF1;
+    padding: 20px;
+    text-align:center;
+    /*background-color: #950740; */
+    color: #66FCF1; /* Цвет символа d8f2e9*/
+    font-size: 100%; /* Размер шрифта */
+   } 
+   a {
+    color: #45A29E; /* Цвет текста */
+   }
+   p {
+    color : #C5C6C7;
+   }
+
+   .login {
+    padding: 1px;
+   }
+   }
