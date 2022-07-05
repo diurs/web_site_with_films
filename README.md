@@ -1,6 +1,8 @@
 # web_site_with_films
 Flask, SQLlite
 
+UPD 2021 - Данное веб-приложение написано с уязвимостями.
+
 ![databases](https://user-images.githubusercontent.com/61711711/118263962-a8e0f380-b4bf-11eb-9192-754751b25a0a.png)
 
 # 
